@@ -1,0 +1,805 @@
+body {
+    background: lightgray;
+    font-size: 13px;
+    line-height: 17px;
+    color: #333;
+    font-weight: normal;
+	text-decoration: none;
+}
+
+#body, #footer {
+    width: 974px;
+}
+
+#body, .primary, .wrapper {
+    clear: both;
+}
+
+#body, #footer {
+    margin-left: auto;
+    margin-right: auto;
+    width: 980px;
+}
+
+#body {
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+#body:after, .primary:after, .wrapper:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#body:after, #footer:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#body .wrapper{
+    padding:0;
+    position: relative;
+}
+
+.wrapper{
+    clear: both;
+}
+
+#wrapper.premium-profile {
+    background: none;
+}
+
+#wrapper {
+    font-size: 13px;
+    line-height: 17px;
+    color: #333;
+    font-weight: normal;
+}
+
+#wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    width: 974px;
+    background: #e9e9e9;
+}
+
+#wrapper:after {
+    content: "\0020";
+    display: block;
+    height: 0;
+    clear: both;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+div {
+    display: block;
+}
+
+.premium-profile #top-card .top-card {
+    background-image: -webkit-linear-gradient(rgba(255,255,255,0.85),#ffffff 65%,#ffffff);
+    background-image: -moz-linear-gradient(rgba(255,255,255,0.85),#ffffff 65%,#ffffff);
+    background-image: -o-linear-gradient(rgba(255,255,255,0.85),#ffffff 65%,#ffffff);
+    background-image: linear-gradient(rgba(255,255,255,0.85),#ffffff 65%,#ffffff);
+    background-color: transparent;
+}
+
+.top-card {
+    position: relative;
+    font-size: 12px;
+}
+
+.profile-top-card {
+    background: #fff;
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.15),-1px 0 0 rgba(0,0,0,0.03),1px 0 0 rgba(0,0,0,0.03),0 1px 0 rgba(0,0,0,0.12);
+    -moz-box-shadow: 0 1px 1px rgba(0,0,0,0.15),-1px 0 0 rgba(0,0,0,0.03),1px 0 0 rgba(0,0,0,0.03),0 1px 0 rgba(0,0,0,0.12);
+    box-shadow: 0 1px 1px rgba(0,0,0,0.15),-1px 0 0 rgba(0,0,0,0.03),1px 0 0 rgba(0,0,0,0.03),0 1px 0 rgba(0,0,0,0.12);
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.profile-card:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.premium-profile #top-card .profile-picture {
+    margin: 0;
+    width: 240px;
+    height: 240px;
+    line-height: 240px;
+    background: none;
+    z-index: 3;
+}
+
+.profile-card .profile-picture {
+    position: relative;
+    z-index: 1;
+    background: #f4f4f4;
+    float: left;
+    width: 200px;
+    height: 200px;
+    line-height: 199px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.profile-card .profile-picture img {
+    vertical-align: middle;
+    -webkit-box-shadow: 0 0 5px 0 rgba(0,0,0,0.1),0 0 0 1px #f4f4f4;
+    -moz-box-shadow: 0 0 5px 0 rgba(0,0,0,0.1),0 0 0 1px #f4f4f4;
+    box-shadow: 0 0 5px 0 rgba(0,0,0,0.1),0 0 0 1px #f4f4f4;
+}
+
+a img {
+    border: none;
+}
+img {
+    border: 0;
+}
+
+#wrapper.premium-profile .profile-card .profile-overview {
+    width: 654px;
+    padding: 25px 40px;
+}
+
+.account-icons {
+    float: right;
+    margin: 0 0 0 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.account-icons #badge-container, .account-icons #badge, .account-icons #badge-view {
+    display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: middle;
+    zoom: 1;
+    vertical-align: top;
+}
+
+.account-icons .influencericon {
+    display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: middle;
+    zoom: 1;
+    vertical-align: baseline;
+    font-size: 14px;
+    line-height: 14px;
+    color: #333;
+
+    text-indent: -119988px;
+    overflow: hidden;
+    text-align: left;
+    background-position: 0 0;
+    width: 90px;
+    height: 22px;
+    margin: 0 0 0 4px;
+    display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: middle;
+    zoom: 1;
+}
+
+.premium-profile #top-card #name h1 {
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 24px;
+    color: #000;
+}
+
+h1 {
+    display: block;
+    font-size: 2em;
+    -webkit-margin-before: 0.67em;
+    -webkit-margin-after: 0.67em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
+}
+
+.premium-profile #top-card #headline {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.premium-profile #top-card #headline .title {
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 22px;
+    color: #434649;
+    color: #666;
+}
+
+.profile-card .title {
+    font-size: 16px;
+    line-height: 20px;
+    color: #333;
+    font-weight: normal;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    display: inline;
+}
+
+.profile-card #demographics {
+    margin: 2px 0;
+    font-size: 13px;
+    line-height: 17px;
+    color: #66696a;
+    font-weight: normal;
+}
+
+.premium-profile #top-card #location {
+    font-size: 13px;
+    line-height: 17px;
+    color: #333;
+    font-weight: normal;
+}
+
+.profile-card #demographics dl, .profile-card #demographics dd {
+    display: inline;
+}
+
+.profile-card #demographics dt {
+    display: none;
+}
+
+.profile-card #demographics dl, .profile-card #demographics dd {
+    display: inline;
+}
+
+.profile-card #demographics a {
+    font-size: 13px;
+    line-height: 17px;
+    color: #66696a;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+.profile-card #demographics dl.industry, .profile-card #demographics dd.industry {
+    border-left: 1px solid #bbb;
+    padding: 0 0 0 8px;
+    margin: 0 0 0 5px;
+}
+
+.profile-card table {
+    margin: 10px 0 0;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.premium-profile #top-card th {
+    font-size: 13px;
+    line-height: 17px;
+    color: #66696a;
+    font-weight: normal;
+}
+
+.profile-card th {
+    font-size: 11px;
+    color: #999;
+    vertical-align: top;
+    padding: 2px 20px 0 0;
+    white-space: nowrap;
+}
+
+caption, th, td {
+    text-align: left;
+    font-weight: normal;
+    vertical-align: middle;
+}
+
+.edit-tools, .edit-toolbox, .edit-section-tip {
+    display: none;
+}
+
+.profile-card th a:link, .profile-card th a:visited, .profile-card th a:hover, .profile-card th a:active {
+    color: #999;
+}
+
+a.visited, a:visited {
+    color: #96999c;
+}
+a:visited, #footer a:visited {
+    color: #069;
+}
+a {
+    color: #006fa6;
+    text-decoration: none;
+}
+
+.premium-profile #top-card td {
+    font-size: 13px;
+    line-height: 17px;
+    color: #333;
+    font-weight: normal;
+}
+.profile-card th+td {
+    padding-top: 2px;
+}
+.profile-card td {
+    padding-top: 1px;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+.profile-card table li {
+    display: inline;
+}
+li {
+    text-align: initial;
+}
+
+.profile-card table li a {
+    font-size: 12px;
+    line-height: 14px;
+    color: #333;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+.profile-card .profile-overview {
+    position: relative;
+    z-index: 6;
+    float: right;
+    width: 405px;
+    word-wrap: break-word;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 0px;
+    padding-bottom: 20px;
+}
+
+.premium-profile #top-card .profile-overview-content {
+    padding: 0;
+}
+
+.profile-card .profile-overview-content {
+    min-height: 149px;
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
+
+.profile-overview .profile-actions.view-actions {
+    display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: middle;
+    zoom: 1;
+}
+
+.profile-overview .profile-actions {
+    display: table-cell;
+}
+
+#wrapper.premium-profile .profile-actions.edit-actions {
+    -webkit-transition: visibility 0.2s,opacity 0.2s;
+    -moz-transition: visibility 0.2s,opacity 0.2s;
+    -o-transition: visibility 0.2s,opacity 0.2s;
+    transition: visibility 0.2s,opacity 0.2s;
+}
+
+.follow .profile-overview .profile-actions {
+    min-width: 282px;
+}
+
+.profile-overview .profile-actions.edit-actions {
+    display: none;
+}
+
+.profile-overview .profile-actions {
+    display: table-cell;
+}
+
+#contact-info-section {
+    position: relative;
+    background: lightyellow;
+    -webkit-box-shadow: 0 4px 0 rgba(0,0,0,0.01) inset,0 3px 0 rgba(0,0,0,0.02) inset,0 2px 0 rgba(0,0,0,0.03) inset,0 1px 0 rgba(0,0,0,0.08) inset,0 -2px 10px rgba(255,255,255,0.5) inset;
+    -moz-box-shadow: 0 4px 0 rgba(0,0,0,0.01) inset,0 3px 0 rgba(0,0,0,0.02) inset,0 2px 0 rgba(0,0,0,0.03) inset,0 1px 0 rgba(0,0,0,0.08) inset,0 -2px 10px rgba(255,255,255,0.5) inset;
+    box-shadow: 0 4px 0 rgba(0,0,0,0.01) inset,0 3px 0 rgba(0,0,0,0.02) inset,0 2px 0 rgba(0,0,0,0.03) inset,0 1px 0 rgba(0,0,0,0.08) inset,0 -2px 10px rgba(255,255,255,0.5) inset;
+}
+
+#profile {
+    float: left;
+    width: 646px;
+    word-wrap: break-word;
+    min-height: 1px;
+}
+
+#aux {
+    margin-left: 10px;
+    float: left;
+    width: 318px;
+    word-wrap: break-word;
+}
+
+#wrapper.premium-profile #background, #wrapper.premium-profile #activity, #wrapper.premium-profile .endorse-v2 .suggested-endorsements {
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+#background {
+    padding-top: 20px;
+    padding-bottom: 0px;
+}
+.profile-activity, .profile-background, .profile-endorsements, .profile-groups, .profile-following, .profile-connections, .profile-your-notes, #relationships_bar {
+    background: #fff;
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.15),-1px 0 0 rgba(0,0,0,0.03),1px 0 0 rgba(0,0,0,0.03),0 1px 0 rgba(0,0,0,0.12);
+    -moz-box-shadow: 0 1px 1px rgba(0,0,0,0.15),-1px 0 0 rgba(0,0,0,0.03),1px 0 0 rgba(0,0,0,0.03),0 1px 0 rgba(0,0,0,0.12);
+    box-shadow: 0 1px 1px rgba(0,0,0,0.15),-1px 0 0 rgba(0,0,0,0.03),1px 0 0 rgba(0,0,0,0.03),0 1px 0 rgba(0,0,0,0.12);
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.profile-activity h2, .profile-background h2, .profile-endorsements h2, .profile-groups h2, .profile-following h2, .profile-connections h2, .profile-your-notes h2, #relationships_bar h2 {
+    margin-top: -20px;
+    margin-bottom: 0px;
+    margin-left: -20px;
+    margin-right: 0px;
+    padding-top: 9px;
+    padding-bottom: 7px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background: #333;
+    color: #fff;
+    font-size: 13px;
+    line-height: 17px;
+    font-weight: bold;
+    padding: 7.5px 20px;
+    display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: middle;
+    zoom: 1;
+    display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: middle;
+    zoom: 1;
+    vertical-align: top;
+    word-wrap: normal;
+}
+
+.background-section, .background-section-drag-proxy {
+    font-size: 13px;
+    line-height: 17px;
+    color: #333;
+    font-weight: normal;
+}
+
+.background-section {
+    position: relative;
+}
+
+#background-summary {
+    margin-top: 28px;
+    margin-bottom: 8px;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+#background-summary .summary-header {
+    margin-top: 0px;
+    margin-bottom: 23px;
+}
+
+#background-summary .summary-header h3 {
+    display: inline;
+}
+.background-section h3, .background-section-drag-proxy h3 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 0px;
+    margin-bottom: 23px;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 18px;
+    color: #434649;
+}
+
+
+
+.background-section h3:before, .background-section-drag-proxy h3:before {
+    float: left;
+    width: 50px;
+}
+
+.background-section .section-item, .background-section-drag-proxy .section-item {
+    margin-bottom: 30px;
+}
+
+.background-section p, .background-section-drag-proxy p {
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+#background-experience {
+    margin-top: 28px;
+    margin-bottom: 8px;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.background-section h3:before, .background-section-drag-proxy h3:before {
+    float: left;
+    width: 50px;
+}
+
+.background-section .section-item, .background-section-drag-proxy .section-item {
+    margin-bottom: 30px;
+}
+
+article, aside, details, figcaption, figure, footer, header, menu, nav, section, summary {
+    display: block;
+}
+
+.background-section h4, .background-section-drag-proxy h4 {
+    display: inline;
+}
+.background-section h4, .background-section-drag-proxy h4 {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 18px;
+    color: #000;
+    margin-top: 0px;
+    margin-bottom: 4px;
+    display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: middle;
+    zoom: 1;
+}
+
+.background-section h5, .background-section-drag-proxy h5 {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 16px;
+    color: #434649;
+}
+
+.background-section h5 a, .background-section-drag-proxy h5 a {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 16px;
+    color: #434649;
+    text-decoration: none;
+}
+
+.background-section .certification-date, .background-section .education-date, .background-section .experience-date-locale, .background-section .honors-date, .background-section .organizations-date, .background-section .patents-date, .background-section .projects-date, .background-section .publication-date, .background-section .test-scores-date, .background-section .volunteering-date-cause, .background-section .volunteering-interests-hint, .background-section-drag-proxy .certification-date, .background-section-drag-proxy .education-date, .background-section-drag-proxy .experience-date-locale, .background-section-drag-proxy .honors-date, .background-section-drag-proxy .organizations-date, .background-section-drag-proxy .patents-date, .background-section-drag-proxy .projects-date, .background-section-drag-proxy .publication-date, .background-section-drag-proxy .test-scores-date, .background-section-drag-proxy .volunteering-date-cause, .background-section-drag-proxy .volunteering-interests-hint {
+    display: block;
+    margin-top: 3px;
+    margin-bottom: 0px;
+    font-size: 12px;
+    line-height: 14px;
+    color: #66696a;
+    font-size: 13px;
+    line-height: 17px;
+}
+
+.background-section p, .background-section-drag-proxy p {
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+#background-volunteering {
+    margin-top: 28px;
+    margin-bottom: 8px;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+#volunteering-opportunities.section-item, #volunteering-interests.section-item {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.background-section .section-item, .background-section-drag-proxy .section-item {
+    margin-bottom: 30px;
+}
+
+.volunteer-section {
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+
+
+
+.background-section h3:before, .background-section-drag-proxy h3:before {
+    float: left;
+    width: 50px;
+}
+
+#background-skills {
+    margin-top: 28px;
+    margin-bottom: 8px;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+
+.background-section h3:before, .background-section-drag-proxy h3:before {
+    float: left;
+    width: 50px;
+}
+
+#skills-item #skills-item-view {
+    padding-top: 0px;
+    padding-bottom: 20px;
+}
+
+#profile-skills h5 {
+    margin-top: 30px;
+    margin-bottom: 0px;
+}
+
+.skills-section {
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+.endorse-item {
+    margin-top: 0px;
+    margin-bottom: 6px;
+    overflow: hidden;
+}
+
+.skills-section .skill-pill {
+    float: left;
+    margin-top: 2px;
+    margin-bottom: 0px;
+}
+.skill-pill {
+    display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: middle;
+    zoom: 1;
+    overflow: hidden;
+    cursor: default;
+    white-space: nowrap;
+}
+
+.endorsed-by-viewer .endorse-count, .has-endorsements .endorse-count {
+    min-width: 18px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+.skill-pill .endorse-count, .skill-pill .endorse-item-name {
+    float: left;
+    line-height: 24px;
+}
+
+.has-endorsements .num-endorsements {
+    font-weight: bold;
+    color: #fff;
+    display: inline;
+}
+
+.endorse-count {
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+    color: #333;
+    font-weight: normal;
+    color: #fff;
+    text-shadow: #666 0 1px 0;
+    -webkit-transition: min-width 0.2s linear;
+    -moz-transition: min-width 0.2s linear;
+    -o-transition: min-width 0.2s linear;
+    transition: min-width 0.2s linear;
+    background-color: #1ba8e5;
+    -webkit-border-radius: 3px 0 0 3px;
+    -moz-border-radius: 3px 0 0 3px;
+    -ms-border-radius: 3px 0 0 3px;
+    -o-border-radius: 3px 0 0 3px;
+    border-radius: 3px 0 0 3px;
+    text-align: center;
+    border-bottom: 1px solid #1ba8e5;
+}
+
+.endorse-item-name {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 13px;
+    padding-right: 13px;
+    font-size: 13px;
+    line-height: 17px;
+    color: #333;
+    font-weight: normal;
+    background-color: #f0f0f0;
+    position: relative;
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
+}
+
+a.endorse-item-name-text {
+    font-size: 13px;
+    line-height: 17px;
+    color: #333;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+.compact-view {
+    overflow: hidden;
+}
+
+.compact-view .endorse-item {
+    display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: middle;
+    zoom: 1;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    margin-left: 0px;
+    margin-right: 5px;
+}
+
+#background-education.last {
+    border-color: transparent;
+}
+#background-education {
+    margin-top: 28px;
+    margin-bottom: 8px;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+
+
+.background-section h3:before, .background-section-drag-proxy h3:before {
+    float: left;
+    width: 50px;
+}
+
+#background-education .section-item {
+    clear: both;
+    min-height: 60px;
+}
+.background-section .section-item, .background-section-drag-proxy .section-item {
+    margin-bottom: 30px;
+}
+
+.background-section h5.experience-logo, .background-section h5.education-logo, .background-section h5.certification-logo, .background-section h5.volunteering-logo, .background-section-drag-proxy h5.experience-logo, .background-section-drag-proxy h5.education-logo, .background-section-drag-proxy h5.certification-logo, .background-section-drag-proxy h5.volunteering-logo {
+    width: 100px;
+    text-align: center;
+}
+.background-section .education-logo, .background-section .experience-logo, .background-section .volunteering-logo, .background-section .certification-logo, .background-section-drag-proxy .education-logo, .background-section-drag-proxy .experience-logo, .background-section-drag-proxy .volunteering-logo, .background-section-drag-proxy .certification-logo {
+    float: right;
+    margin-top: -2px;
+    margin-bottom: 0px;
+}
+.background-section h5, .background-section-drag-proxy h5 {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 16px;
+    color: #434649;
+}
+
+.background-section h4 a, .background-section-drag-proxy h4 a {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 18px;
+    color: #000;
+    text-decoration: none;
+}
+
