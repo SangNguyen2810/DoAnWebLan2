@@ -32,17 +32,17 @@
                         <div class="profile-overview">
                             <div class="profile-overview-content">
                                 <div id="member-22330283" class="masthead">
-                                    <div data-li-template="p2_basic_info" ng-repeat="y in myData">
+                                    <div data-li-template="p2_basic_info">
 
 
                                         <div id="name-container" data-li-template="name">
                                             <div id="name" class="editable-item">
-                                                <h1><span class="fn"><span class="full-name" href="#" editable-text="y.name" dir="auto">{{y.name || "empty"}}</span></span></h1>
+                                                <h1><span class="fn"><span class="full-name" href="#" editable-text="myData.profile.name" dir="auto">{{ myData.profile.name|| "empty"}}</span></span></h1>
                                             </div>
                                         </div>
                                         <div id="headline-container" data-li-template="headline">
                                             <div id="headline" class="editable-item">
-                                                <p class="title" href="#" editable-text="y.University" dir="ltr">{{y.University || "empty"}}</p>
+                                                <p class="title" href="#" editable-text="myData.profile.University" dir="ltr">{{ myData.profile.University || "empty"}}</p>
                                             </div>
                                         </div>
                                         <div class="demographic-info adr editable-item" id="demographics">
@@ -50,10 +50,10 @@
                                                 <div id="location" class="editable-item">
                                                     <dl>
                                                         <dt>Location</dt>
-                                                        <dd><span class="locality" href="#" editable-text="y.Country"><a>{{y.Country || "empty"}}</a></span>
+                                                        <dd><span class="locality" href="#" editable-text="myData.profile.Country"><a>{{myData.profile.Country || "empty"}}</a></span>
                                                         </dd>
                                                         <dt>Industry</dt>
-                                                        <dd class="industry" href="#" editable-text="y.University1"><a>{{y.University1 || "empty"}}</a></dd>
+                                                        <dd class="industry" href="#" editable-text="myData.profile.University1"><a>{{myData.profile.University1 || "empty"}}</a></dd>
                                                     </dl>
                                                 </div>
                                             </div>
@@ -69,7 +69,7 @@
                                                         <li>
                                                                 <span>
                                                                     <strong>
-                                                                        <a href="#" editable-text="y.Current">{{y.Current || "empty"}}h</a>
+                                                                        <a href="#" editable-text="myData.profile.Current">{{myData.profile.Current || "empty"}}h</a>
                                                                     </strong>
                                                                 </span>
                                                         </li>
@@ -85,7 +85,7 @@
                                                         <li>
                                                                 <span>
                                                                     <strong>
-                                                                        <a href="#" editable-text="y.Previous">{{y.Previous || "empty"}}</a>
+                                                                        <a href="#" editable-text="myData.profile.Previous">{{myData.profile.Previous || "empty"}}</a>
                                                                     </strong>
                                                                 </span>
                                                         </li>
@@ -101,7 +101,7 @@
                                                         <li>
                                                                 <span>
                                                                     <strong>
-                                                                        <a href="#" editable-text="y.HighSchool">{{y.HighSchool || "empty"}}</a>
+                                                                        <a href="#" editable-text="myData.profile.HighSchool">{{myData.profile.HighSchool || "empty"}}</a>
                                                                     </strong>
                                                                 </span>
                                                         </li>
@@ -126,20 +126,21 @@
                                         <img src="image/Hinh1.png">
                                         <h3>Summary</h3>
                                     </div>
-                                    <div id="summary-item" class="editable-item section-item" ng-repeat="z in myData">
+
+                                    <div id="summary-item" class="editable-item section-item"  >
                                         <div id="summary-item-view">
                                             <div class="summary">
-                                                <p class="description" dir="ltr" href="#" editable-text="z.des1">
-                                                    {{z.des1 || "empty"}}<br>
+                                                <p class="description" dir="ltr" href="#" editable-text="myData.summary.value1">
+                                                    {{myData.summary.value1 || "empty"}}<br>
                                                    </p>
-                                                <p class="description" dir="ltr" href="#" editable-text="z.des2">
-                                                    {{z.des2 || "empty"}}<br>
+                                                <p class="description" dir="ltr" href="#" editable-text="myData.summary.value2">
+                                                    {{myData.summary.value2|| "empty"}}<br>
                                                 </p>
-                                                <p class="description" dir="ltr" href="#" editable-text="z.des3">
-                                                    {{z.des3 || "empty"}}<br>
+                                                <p class="description" dir="ltr" href="#" editable-text="myData.summary.value3">
+                                                    {{myData.summary.value3 || "empty"}}<br>
                                                 </p>
-                                                <p class="description" dir="ltr" href="#" editable-text="z.des4">
-                                                    {{z.des4 || "empty"}}<br>
+                                                <p class="description" dir="ltr" href="#" editable-text="myData.summary.value4">
+                                                    {{myData.summary.value4 || "empty"}}<br>
                                                 </p>
                                             </div>
                                         </div>
@@ -151,18 +152,16 @@
                                         <img src="image/Hinh2.png">
                                         <h3>Experience</h3>
                                         <div id="experience-58506340" class="editable-item section-item current-position" >
-                                            <div id="experience-58506340-view" ng-repeat="x in myData">
+                                            <div id="experience-58506340-view" >
                                                 <header>
-                                                    <h4 href="#" editable-text="x.exp1"><a>{{x.exp1 || "empty"}}</a></h4>
-                                                    <h5 href="#" editable-text="x.exp2">
-                                                        <strong><a>{{x.exp2 || "empty"}}</a></strong>
+                                                    <h4 href="#" editable-text="myData.exp.value1"><a>{{myData.exp.value1 || "empty"}}</a></h4>
+                                                    <h5 href="#" editable-text="myData.exp.value2">
+                                                        <strong><a>{{myData.exp.value2 || "empty"}}</a></strong>
                                                     </h5>
-                                                <span class="experience-date-locale" href="#" editable-text="x.exp3">
-                                                    <time>{{x.exp3 || "empty"}}</time>
+                                                <span class="experience-date-locale" href="#" editable-text="myData.exp.value3">
+                                                    <time>{{myData.exp.value3 || "empty"}}</time>
                                                 </span>
-                                                    <p class="description summary-field-show-more" dir="ltr" href="#" editable-text="x.exp5">
-                                                        {{x.exp5 || "empty"}}
-                                                </header>
+
                                             </div>
                                         </div>
                                     </div>
@@ -171,12 +170,12 @@
                                     <div id="background-volunteering" class="background-volunteering">
                                         <img src="image/Hinh4.PNG">
                                         <h3>Projects</h3>
-                                        <div id="volunteering-interests" class="editable-item section-item first" ng-repeat="i in myData">
+                                        <div id="volunteering-interests" class="editable-item section-item first" >
                                             <div id="volunteering-causes-view" class="volunteer-section" >
                                                 <div class="interests">
                                                     <h4>Causes Sang cares about:</h4>
-                                                    <p class="description summary-field-show-more" dir="ltr" href="#" editable-text="i.proj">
-                                                        {{i.proj || "empty"}}
+                                                    <p class="description summary-field-show-more" dir="ltr" href="#" editable-text="myData.proj.value1">
+                                                        {{myData.proj.value1 || "empty"}}
                                                     </p>
                                                 </div>
                                             </div>
@@ -185,7 +184,7 @@
                                     </div>
                                 </div>
                                 <div id="background-skills-container" class="background-section" data-li-template="skills_section">
-                                    <div id="background-skills" class="background-skills edit-default" ng-repeat="a in myData">
+                                    <div id="background-skills" class="background-skills edit-default" >
                                         <div class="hd">
                                             <img src="image/Hinh3.jpg">
                                             <h3>Skills</h3>
@@ -201,7 +200,7 @@
                                                                 <span class="num-endorsements" data-count="242">99+</span>
                                                             </a>
                                                             <span class="endorse-item-name">
-                                                                <a class="endorse-item-name-text" href="#" editable-text="a.sk">{{a.sk || "empty"}}</a>
+                                                                <a class="endorse-item-name-text" href="#" editable-text="myData.skills.value1">{{myData.skills.value1 || "empty"}}</a>
                                                             </span>
                                                         </span>
                                                         </li>
@@ -211,7 +210,7 @@
                                                                 <span class="num-endorsements" data-count="242">99+</span>
                                                             </a>
                                                             <span class="endorse-item-name">
-                                                                <a class="endorse-item-name-text" href="#" editable-text="a.sk">{{a.sk || "empty"}}</a>
+                                                                <a class="endorse-item-name-text" href="#" editable-text="myData.skills.value2">{{myData.skills.value2 || "empty"}}</a>
                                                             </span>
                                                         </span>
                                                         </li>
@@ -221,7 +220,7 @@
                                                                 <span class="num-endorsements" data-count="242">99+</span>
                                                             </a>
                                                             <span class="endorse-item-name">
-                                                                <a class="endorse-item-name-text" href="#" editable-text="a.sk">{{a.sk || "empty"}}</a>
+                                                                <a class="endorse-item-name-text" href="#" editable-text="myData.skills.value3">{{myData.skills.value3 || "empty"}}</a>
                                                             </span>
                                                         </span>
                                                         </li>
@@ -235,7 +234,7 @@
                                                                     <span class="num-endorsements" data-count="65">65</span>
                                                                 </a>
                                                                 <span class="endorse-item-name">
-                                                                    <a class="endorse-item-name-text" href="#" editable-text="a.sk">{{a.sk || "empty"}}</a>
+                                                                    <a class="endorse-item-name-text" href="#" editable-text="myData.skills.value4">{{myData.skills.value4 || "empty"}}</a>
                                                                 </span>
                                                             </span>
                                                             </div>
@@ -247,7 +246,7 @@
                                                                     <span class="num-endorsements" data-count="65">65</span>
                                                                 </a>
                                                                 <span class="endorse-item-name">
-                                                                    <a class="endorse-item-name-text" href="#" editable-text="a.sk1">{{a.sk1 || "empty"}}</a>
+                                                                    <a class="endorse-item-name-text" href="#" editable-text="myData.skills.value5">{{myData.skills.value5 || "empty"}}</a>
                                                                 </span>
                                                             </span>
                                                             </div>
@@ -259,7 +258,7 @@
                                                                     <span class="num-endorsements" data-count="65">65</span>
                                                                 </a>
                                                                 <span class="endorse-item-name">
-                                                                    <a class="endorse-item-name-text" href="#" editable-text="a.sk1">{{a.sk1 || "empty"}}</a>
+                                                                    <a class="endorse-item-name-text" href="#" editable-text="myData.skills.value6">{{myData.skills.value6 || "empty"}}</a>
                                                                 </span>
                                                             </span>
                                                             </div>
@@ -271,7 +270,7 @@
                                                                     <span class="num-endorsements" data-count="65">65</span>
                                                                 </a>
                                                                 <span class="endorse-item-name">
-                                                                    <a class="endorse-item-name-text" href="#" editable-text="a.sk1">{{a.sk1 || "empty"}}</a>
+                                                                    <a class="endorse-item-name-text" href="#" editable-text="myData.skills.value7">{{myData.skills.value7 || "empty"}}</a>
                                                                 </span>
                                                             </span>
                                                             </div>
@@ -286,7 +285,7 @@
                                     <div id="background-education" class="background-education edit-default last">
                                         <img src="image/Hinh5.PNG">
                                         <h3>Education</h3>
-                                        <div id="education-18832484" class="editable-item section-item" ng-repeat="c in myData">
+                                        <div id="education-18832484" class="editable-item section-item" >
                                             <div id="education-18832484-view" >
                                                 <div class="education first">
                                                     <a>
@@ -301,15 +300,15 @@
                                                             <a>University Of Science</a>
                                                         </h4>
                                                         <h5>
-                                                            <span class="degree" href="#" editable-text="c.edu1">{{c.edu1 || "empty"}} </span>
+                                                            <span class="degree" href="#" editable-text="myData.edu.value1">{{myData.edu.value1 || "empty"}} </span>
                                                         <span class="major">
-                                                            <a href="#" editable-text="c.edu2" >{{c.edu2 || "empty"}}</a>
+                                                            <a href="#" editable-text="myData.edu.value2" >{{myData.edu.value2 || "empty"}}</a>
                                                         </span>
                                                         </h5>
                                                     </header>
                                                 <span class="education-date">
-                                                    <time href="#" editable-text="c.edu3">{{c.edu3 || "empty"}}</time>
-                                                    <time href="#" editable-text="c.edu4"> {{c.edu4 || "empty"}}</time>
+                                                    <time href="#" editable-text="myData.edu.value3">{{myData.edu.value3 || "empty"}}</time>
+                                                    <time href="#" editable-text="myData.edu.value4"> {{myData.edu.value4 || "empty"}}</time>
                                                 </span>
                                                 </div>
                                             </div>
