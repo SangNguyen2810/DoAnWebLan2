@@ -9,13 +9,9 @@
     <link src="css/xeditable.css" rel="stylesheet">
     <script src="js/xeditable.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
-    <!-- Latest compiled and minified CSS -->
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
-
-    <!-- Latest compiled and minified JavaScript -->
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 </head>
 <div ng-app="myCV" id="body" class="container" role="main">
@@ -69,7 +65,7 @@
                                                         <li>
                                                                 <span>
                                                                     <strong>
-                                                                        <a href="#" editable-text="myData.profile.Current">{{myData.profile.Current || "empty"}}h</a>
+                                                                        <a href="#" editable-text="myData.profile.Current">{{myData.profile.Current || "empty"}}</a>
                                                                     </strong>
                                                                 </span>
                                                         </li>
@@ -126,21 +122,19 @@
                                         <img src="image/Hinh1.png">
                                         <h3>Summary</h3>
                                     </div>
+                                    <div>
+                                        <span>Do you wanna add something?</span>
+                                        <input type="text" ng-model="summary" placeholder="WRITE ME!" ng-required/>
+                                        <button type="button" class="btn btn-info" id="button1" ng-click="AS()">Add</button>
+
+                                    </div>
 
                                     <div id="summary-item" class="editable-item section-item"  >
                                         <div id="summary-item-view">
-                                            <div class="summary">
-                                                <p class="description" dir="ltr" href="#" editable-text="myData.summary.value1">
-                                                    {{myData.summary.value1 || "empty"}}<br>
-                                                   </p>
-                                                <p class="description" dir="ltr" href="#" editable-text="myData.summary.value2">
-                                                    {{myData.summary.value2|| "empty"}}<br>
-                                                </p>
-                                                <p class="description" dir="ltr" href="#" editable-text="myData.summary.value3">
-                                                    {{myData.summary.value3 || "empty"}}<br>
-                                                </p>
-                                                <p class="description" dir="ltr" href="#" editable-text="myData.summary.value4">
-                                                    {{myData.summary.value4 || "empty"}}<br>
+                                            <div class="summary" ng-repeat="sum in myData.summary">
+
+                                                <p class="description" dir="ltr" href="#" editable-text="sum.info">
+                                                    {{sum.info || 'empty'}}<br>
                                                 </p>
                                             </div>
                                         </div>
@@ -151,17 +145,15 @@
                                     <div id="background-experience" class="background-experience edit-default">
                                         <img src="image/Hinh2.png">
                                         <h3>Experience</h3>
-                                        <div id="experience-58506340" class="editable-item section-item current-position" >
-                                            <div id="experience-58506340-view" >
-                                                <header>
-                                                    <h4 href="#" editable-text="myData.exp.value1"><a>{{myData.exp.value1 || "empty"}}</a></h4>
-                                                    <h5 href="#" editable-text="myData.exp.value2">
-                                                        <strong><a>{{myData.exp.value2 || "empty"}}</a></strong>
-                                                    </h5>
-                                                <span class="experience-date-locale" href="#" editable-text="myData.exp.value3">
-                                                    <time>{{myData.exp.value3 || "empty"}}</time>
-                                                </span>
+                                        <form>
+                                            <span>Do you wanna add something?</span>
+                                            <input type="text" ng-model="exp" placeholder="WRITE ME!" ng-required/>
+                                            <button type="button" class="btn btn-info" id="button2" ng-click="AEXP()">Add</button>
 
+                                        </form>
+                                        <div id="experience-58506340" class="editable-item section-item current-position" ng-repeat="exp in myData.exp">
+                                            <div id="experience-58506340-view" >
+                                                <p class="description" dir="ltr" href="#" editable-text="exp.info">{{exp.info || "empty"}}</p>
                                             </div>
                                         </div>
                                     </div>
@@ -170,12 +162,20 @@
                                     <div id="background-volunteering" class="background-volunteering">
                                         <img src="image/Hinh4.PNG">
                                         <h3>Projects</h3>
+                                        <form>
+                                            <span>Do you wanna add something?</span>
+                                            <input type="text" ng-model="proj" placeholder="WRITE ME!" ng-required/>
+                                            <button type="button" class="btn btn-info" id="button3" ng-click="APROJ()">Add</button>
+                                            <br>
+                                            <br>
+                                        </form>
+
                                         <div id="volunteering-interests" class="editable-item section-item first" >
                                             <div id="volunteering-causes-view" class="volunteer-section" >
                                                 <div class="interests">
                                                     <h4>Causes Sang cares about:</h4>
-                                                    <p class="description summary-field-show-more" dir="ltr" href="#" editable-text="myData.proj.value1">
-                                                        {{myData.proj.value1 || "empty"}}
+                                                    <p class="description summary-field-show-more" dir="ltr" href="#" editable-text="myData.proj.value1" ng-repeat="p in myData.proj">
+                                                        {{p.info || "empty"}}
                                                     </p>
                                                 </div>
                                             </div>
@@ -188,6 +188,7 @@
                                         <div class="hd">
                                             <img src="image/Hinh3.jpg">
                                             <h3>Skills</h3>
+
                                         </div>
                                         <div id="skills-item" class="editable-item">
                                             <div id="skills-item-view">
@@ -285,6 +286,7 @@
                                     <div id="background-education" class="background-education edit-default last">
                                         <img src="image/Hinh5.PNG">
                                         <h3>Education</h3>
+
                                         <div id="education-18832484" class="editable-item section-item" >
                                             <div id="education-18832484-view" >
                                                 <div class="education first">
@@ -295,21 +297,21 @@
                                                             </strong>
                                                         </h5>
                                                     </a>
+                                                    <form>
+                                                        <span>Do you wanna add something?</span>
+                                                        <input type="text" ng-model="edu" placeholder="WRITE ME!" ng-required/>
+                                                        <button type="button" class="btn btn-info" id="button4" ng-click="AEDU()">Add</button>
+                                                    </form>
                                                     <header>
                                                         <h4 class="summary fn org" dir="auto">
                                                             <a>University Of Science</a>
                                                         </h4>
-                                                        <h5>
-                                                            <span class="degree" href="#" editable-text="myData.edu.value1">{{myData.edu.value1 || "empty"}} </span>
-                                                        <span class="major">
-                                                            <a href="#" editable-text="myData.edu.value2" >{{myData.edu.value2 || "empty"}}</a>
-                                                        </span>
-                                                        </h5>
                                                     </header>
-                                                <span class="education-date">
-                                                    <time href="#" editable-text="myData.edu.value3">{{myData.edu.value3 || "empty"}}</time>
-                                                    <time href="#" editable-text="myData.edu.value4"> {{myData.edu.value4 || "empty"}}</time>
-                                                </span>
+                                                    <div ng-repeat="edu in myData.edu">
+                                                    <p class="description" dir="ltr" href="#" editable-text="edu.info">
+                                                        {{edu.info || 'empty'}}<br>
+                                                    </p>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -321,5 +323,6 @@
                 </div>
             </div>
         </div>
+    </div>
     </div>
 </html>

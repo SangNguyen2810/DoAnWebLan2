@@ -802,4 +802,43 @@ a.endorse-item-name-text {
     color: #000;
     text-decoration: none;
 }
-
+.TBAO
+{
+    font-size: 30px;
+    font-weight: bold;
+    color: #398439;
+}
+.TBAO1
+ {
+     font-size: 30px;
+     font-weight: bold;
+     color: #398439;
+ }
+.TBAO2
+{
+    font-size: 30px;
+    font-weight: bold;
+    color: #398439;
+}
+.TieuDe
+{
+    font-size: 30px;
+    font-weight: bold;
+    color: #398439;
+}
+#button1
+{
+    float: right;
+}
+#button2
+ {
+     float: right;
+ }
+#button3
+{
+    float: right;
+}
+#button4
+{
+    float: right;
+}

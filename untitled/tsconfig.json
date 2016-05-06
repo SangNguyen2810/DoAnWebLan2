@@ -11,21 +11,31 @@
       "HighSchool":"Lê Quý Đôn, Khánh Hòa "
     },
   "summary":
-  {
-    "value1":"Coding .NET over 1 year.",
-    "value2":"Currently Student at Univerisity of Science, the school of VietNam's university.",
-    "value3":"Experience on coding C++.",
-    "value4":"Specialites: strategy, marketing, product developement."
-  },
+  [
+    {"info":"Coding .NET over 1 year."},
+    {"info":"Currently Student at Univerisity of Science, the school of VietNam's university."},
+    {"info":"Experience on coding C++."},
+    {"info":"Specialites: strategy, marketing, product developement."}
+  ],
 
-  "exp": {
-    "value1": "Student.",
-    "value2": "University of Science.",
-    "value3": "September 2013-Present(3 years 5 months)."
-  },
-  "proj": {
-    "value1": "C++ and C# Progamming: Paint and Caro online."
-  },
+
+
+
+
+
+
+
+
+
+
+  "exp": [
+    {"info":"Student"},
+    {"info":"University of Science."},
+    {"info":"September 2013-Present(3 years 5 months)."}
+  ],
+  "proj": [
+    {"info": "C++ and C# Progamming: Paint and Caro online."}
+    ],
   "skills": {
     "value1": "Business Analyst",
     "value2": "Business Analyst",
@@ -35,12 +45,12 @@
     "value6": "Marketing Online",
     "value7": "Marketing Online"
   },
-  "edu": {
-    "value1": "Le Quy Don HighSchool.",
-    "value2": "Software Technology",
-    "value3": "Information Technology",
-    "value4": "2013",
-    "value5": "- July 2017"
-  }
+  "edu": [
+    {"info": "Le Quy Don HighSchool."},
+    {"info": "Software Technology"},
+    {"info": "Information Technology"},
+    {"info": "2013- July 2017"}
+
+  ]
 
 }
